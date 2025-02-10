@@ -1,0 +1,59 @@
+name: UI Requirements Template
+description: A template for UI requirement issue.
+labels: ["documentation"]
+type: 'requirements'
+projects: [sensinno/5]
+title: "[REQ] [UI] [platform] [project-tag] Screen|Component Requirements - [service or endpoint]" 
+
+body:
+  - type: markdown
+    attributes:
+      value: "# UI Requirements Template"
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in UI requirements so that a frontend developer can implement the functional version. This is meant to work in tandem with the Figma design files.
+  - type: markdown
+    attributes:
+      value: |
+        Please attach to relevant `plan-milestone` and `product` on the project tab. And choose a proper name.
+  - type: markdown
+    attributes:
+      value: |
+        This template is broken down into 3 main parts: Scope (+ Requirements overview), Details, References.
+
+
+  - type: textarea
+    attributes:
+      label: "Scope"
+      description: "This overview should make it easy to understand what the API relates to, for an outsider, at a glance."
+      value: "Describes the UI requirements for: [screen / component] [version number]  \n \n - Relates to `branch name` \n - Platform: \n - Variant: "
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: "Requirements overview"
+      description: "Describe the functional and visual criteria from the point of view of the user."
+      value: "The following criteria should be met: \n - "
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: "Details"
+      description: "Describe the screen layout, component list, relevant API endpoints. Include user actions/input and frontend operations/feedback."
+      value: "Screen layout \n Component list \n User Actions \n API endpoints."
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: "References"
+      description: "Provide links to design files (Figma), screenshots, related issues, diagrams."
+      value: "Figma link(s) \n UI Screenshots \n Related issues"
+    validations:
+      required: true

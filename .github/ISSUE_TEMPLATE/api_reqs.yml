@@ -1,0 +1,59 @@
+name: API Requirements Template
+description: A template for API requirements broken down into 3 main parts.
+labels: ["documentation"]
+type: 'requirements'
+projects: [sensinno/5]
+title: "[REQ] [API] [project-tag] API Requirements - [service or endpoint]" 
+
+body:
+  - type: markdown
+    attributes:
+      value: "# API Requirements Template"
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in API requirements so that an outside developer (FE/BE) can use and edit the API.
+  - type: markdown
+    attributes:
+      value: |
+        Please attach to relevant `plan-milestone` and `product` on the project tab.
+  - type: markdown
+    attributes:
+      value: |
+        This template is broken down into 4 main parts: Scope, Requirements overview, Details, References.
+
+
+  - type: textarea
+    attributes:
+      label: "Scope"
+      description: "This overview should make it easy to understand what the API relates to, for an outsider, at a glance."
+      value: "Describes the API requirements for: [service, project, endpoint] [version number]  \n \n - Relates to `branch name` \n - Platform: \n - Variant: "
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: "Requirements overview"
+      description: "Describe the functional criteria from the point of view of the FE/BE."
+      value: "The following criteria should be met: \n - "
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: "Details"
+      description: "Detailed overview of API requirements. Including API schema descriptions, endpoint name, relevant backend operations."
+      value: "API schema descriptions, Endpoint, Backend operations"
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: "References"
+      description: "Provide links to API docs, related issues, diagrams or quickly describe relevant database structures."
+      value: "API docs link, Related issues, Diagrams, Database structures"
+    validations:
+      required: true
