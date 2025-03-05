@@ -1,6 +1,6 @@
 name: Standard Task
 description: Use this template for standard tasks
-title: "[TASK] Instruction"
+title: "Task title"
 labels: ["task"]
 projects:
   - sensinno/5
@@ -16,32 +16,23 @@ body:
     attributes:
       value: |
         ## Context
-        Please provide the purpose and the most relevant background details of the task.
+        Please provide the scope, purpose and the most relevant background details of the task.
 
   - type: textarea
     id: scope
     attributes:
       label: Scope
       description: Provide a high level overview of the task, making the limitations of the task clear.
-      placeholder: The scope of the task is... 
-    validations:
-      required: true
-
-  - type: textarea
-    id: purpose
-    attributes:
-      label: Purpose 
-      description: (OPTIONAL) Provide the purpose of the task.
-      placeholder: The purpose of the task...
+      placeholder: The task covers... 
     validations:
       required: false
 
   - type: textarea
     id: background
     attributes:
-      label: Background details 
-      description: (OPTIONAL) Provide any additional information or context for this task.
-      placeholder: The most relevant background details of the task...
+      label: Background / Purpose
+      description: Provide any additional information or context for this task.
+      placeholder: The reason for the task is... 
     validations:
       required: false
 
@@ -57,18 +48,18 @@ body:
     attributes:
       label: Instructions
       description: Provide detailed instructions for completing the task.
-      placeholder: Describe the instructions in detail...
+      placeholder: Steps to complete the task are...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: acceptance_criteria
     attributes:
       label: Acceptance Criteria
       description: Define the acceptance criteria for this task.
-      placeholder: "The user/screen/FE/BE should able..."
+      placeholder: When completed the system/user should be able to...
     validations:
-      required: true
+      required: false
 
 
   - type: markdown
@@ -81,7 +72,6 @@ body:
     id: references
     attributes:
       label: References
-      description: Provide reference screenshots, diagrams or data examples.
-      value: "Reference screenshots / wireframes \n-Documentation / requirement links \n-Diagrams \n-Data examples" 
+      description: Attach related issues, reference screenshots, diagrams or data examples.
     validations:
-      required: true
+      required: false
